@@ -157,6 +157,7 @@ void showData(const MeteoData& d) {
 /* ---------- SETUP ---------- */
 void setup() {
   Serial.begin(115200);
+  delay(2000);
   Wire.begin();
   disp.init();
   disp.backlight();
